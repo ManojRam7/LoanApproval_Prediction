@@ -12,7 +12,7 @@ Thank you for your interest in contributing to this project! This document provi
 
 ### 1. Fork the Repository
 ```bash
-git clone https://github.com/yourusername/LoanApproval_Prediction.git
+git clone https://github.com/ManojRam7/LoanApproval_Prediction.git
 cd LoanApproval_Prediction
 ```
 

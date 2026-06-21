@@ -11,7 +11,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/LoanApproval_Prediction.git
+git clone https://github.com/ManojRam7/LoanApproval_Prediction.git
 cd LoanApproval_Prediction
 ```
 

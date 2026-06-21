@@ -112,7 +112,7 @@ The model is trained on a loan approval dataset containing:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/LoanApproval_Prediction.git
+   git clone https://github.com/ManojRam7/LoanApproval_Prediction.git
    cd LoanApproval_Prediction
    ```
 
