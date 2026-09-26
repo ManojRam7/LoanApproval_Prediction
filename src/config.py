@@ -1,5 +1,5 @@
 """
-Configuration settings for the Loan Approval Prediction system.
+Configuration settings for the Loan Approval Analyser.
 """
 
 import os

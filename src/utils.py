@@ -1,5 +1,5 @@
 """
-Utility functions for the Loan Approval Prediction system.
+Utility functions for the Loan Approval Analyser.
 """
 
 from src.logger import logger

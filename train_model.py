@@ -1,5 +1,5 @@
 """
-Model Training Script for Loan Approval Prediction
+Model training script for the Loan Approval Analyser
 
 This script trains a Random Forest classifier on loan approval data
 and saves the trained model for production use.

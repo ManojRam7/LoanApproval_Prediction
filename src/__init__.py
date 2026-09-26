@@ -1,5 +1,5 @@
 """
-Loan Approval Prediction Package
+Loan Approval Analyser package
 A machine learning solution for predicting loan application approval status.
 """
 

@@ -1,4 +1,4 @@
-# Loan Approval Prediction - Development Requirements
+# Loan Approval Analyser - development requirements
 # These packages are used for model training, analysis, and testing
 
 pandas==2.0.3

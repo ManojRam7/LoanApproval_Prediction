@@ -1,5 +1,5 @@
 """
-Streamlit application for Loan Approval Prediction.
+Streamlit application for the Loan Approval Analyser.
 An interactive web interface for predicting loan approval status.
 """
 
@@ -19,7 +19,7 @@ from src.config import STREAMLIT_PAGE_LAYOUT, STREAMLIT_THEME
 
 # Page configuration
 st.set_page_config(
-    page_title="Loan Approval Predictor",
+    page_title="Loan Approval Analyser",
     layout=STREAMLIT_PAGE_LAYOUT,
     initial_sidebar_state="expanded",
 )
@@ -70,7 +70,7 @@ def main():
     """Main Streamlit application."""
     # Title
     st.markdown(
-        '<div class="header-style">Loan Approval Predictor</div>',
+        '<div class="header-style">Loan Approval Analyser</div>',
         unsafe_allow_html=True,
     )
     st.markdown(

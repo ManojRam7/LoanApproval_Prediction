@@ -1,5 +1,5 @@
 """
-Logging configuration module for the Loan Approval Prediction system.
+Logging configuration module for the Loan Approval Analyser.
 """
 
 import logging

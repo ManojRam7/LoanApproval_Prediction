@@ -1,4 +1,4 @@
-# Loan Approval Prediction
+# Loan Approval Analyser
 
 Predicts whether a loan application will be approved from the applicant's profile, income, loan
 amount, term, credit history and property area. Four classifiers were compared in the notebook; the
