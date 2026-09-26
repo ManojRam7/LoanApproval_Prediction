@@ -20,7 +20,6 @@ from src.config import STREAMLIT_PAGE_LAYOUT, STREAMLIT_THEME
 # Page configuration
 st.set_page_config(
     page_title="Loan Approval Predictor",
-    page_icon="💰",
     layout=STREAMLIT_PAGE_LAYOUT,
     initial_sidebar_state="expanded",
 )
@@ -71,7 +70,7 @@ def main():
     """Main Streamlit application."""
     # Title
     st.markdown(
-        '<div class="header-style">💰 Loan Approval Predictor</div>',
+        '<div class="header-style">Loan Approval Predictor</div>',
         unsafe_allow_html=True,
     )
     st.markdown(
@@ -81,7 +80,7 @@ def main():
 
     # Sidebar information
     with st.sidebar:
-        st.markdown("### 📋 Application Information")
+        st.markdown("### Application Information")
         st.info(
             """
             **How it works:**
@@ -96,7 +95,7 @@ def main():
             """
         )
 
-        st.markdown("### 🎯 Feature Importance Tips")
+        st.markdown("### Feature Importance Tips")
         st.warning(
             """
             These factors impact approval:
@@ -112,7 +111,7 @@ def main():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("📝 Personal Information")
+        st.subheader("Personal Information")
 
         gender = st.selectbox(
             "Gender",
@@ -145,7 +144,7 @@ def main():
         )
 
     with col2:
-        st.subheader("💼 Financial Information")
+        st.subheader("Financial Information")
 
         applicant_income = st.number_input(
             "Annual Income ($)",
@@ -183,7 +182,7 @@ def main():
     col3, col4 = st.columns(2)
 
     with col3:
-        st.subheader("📍 Additional Details")
+        st.subheader("Additional Details")
 
         credit_history = st.selectbox(
             "Credit History",
@@ -200,7 +199,7 @@ def main():
 
     # Validation and income ratio
     with col4:
-        st.subheader("💡 Quick Metrics")
+        st.subheader("Quick Metrics")
 
         try:
             income_validation = validate_income_ratio(
@@ -228,7 +227,7 @@ def main():
 
     with col_btn_2:
         if st.button(
-            "🔍 Predict Loan Approval",
+            "Predict Loan Approval",
             use_container_width=True,
             type="primary",
         ):
@@ -276,13 +275,13 @@ def main():
                 logger.info(f"Prediction made: {prediction}")
 
             except Exception as e:
-                st.error(f"❌ Error during prediction: {str(e)}")
+                st.error(f"Error during prediction: {str(e)}")
                 logger.error(f"Prediction error: {e}")
 
     # Display results
     if st.session_state.prediction_made and st.session_state.prediction_result:
         st.divider()
-        st.subheader("🎯 Prediction Results")
+        st.subheader("Prediction Results")
 
         prediction = st.session_state.prediction_result["prediction"]
         probability = st.session_state.prediction_result["probability"]
@@ -309,7 +308,7 @@ def main():
             )
 
         # Detailed breakdown
-        st.subheader("📊 Prediction Details")
+        st.subheader("Prediction Details")
 
         col1, col2, col3 = st.columns(3)
 
@@ -336,7 +335,7 @@ def main():
     st.markdown(
         """
         <div style='text-align: center; color: #888; font-size: 0.9em;'>
-        <p>🤖 Powered by Random Forest Machine Learning Model</p>
+        <p>Powered by Random Forest Machine Learning Model</p>
         <p>This prediction is based on historical data patterns. Always verify with financial advisors.</p>
         </div>
         """,

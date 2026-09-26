@@ -30,7 +30,10 @@ class ModelManager:
         """Load the trained model from pickle file."""
         try:
             if not self.model_path.exists():
-                raise FileNotFoundError(f"Model file not found: {self.model_path}")
+                # Fresh deployment: train once from the bundled dataset (takes a second)
+                logger.info(f"No model at {self.model_path}; training one now")
+                from train_model import main as train_and_save
+                train_and_save()
 
             with open(self.model_path, "rb") as f:
                 self.model = pickle.load(f)

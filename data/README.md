@@ -1,15 +1,16 @@
-# LoanApproval_Prediction - Data Files
+# Data
 
-## Contents
+`LoanApprovalPrediction.csv`: 598 loan applications with 11 input fields and the outcome.
 
-- **LoanApprovalPrediction.csv** - Raw loan approval dataset with applicant information and approval status
+| Column | Meaning |
+|---|---|
+| Loan_ID | Application ID (dropped before training) |
+| Gender, Married, Dependents, Education, Self_Employed | Applicant profile |
+| ApplicantIncome, CoapplicantIncome | Monthly income |
+| LoanAmount, Loan_Amount_Term | Amount requested (thousands) and term (months) |
+| Credit_History | 1 if the credit history meets guidelines |
+| Property_Area | Urban, Semiurban or Rural |
+| Loan_Status | Y approved (411), N rejected (187) |
 
-## Data Description
-
-The dataset contains 615 records with the following features:
-- Applicant demographic information (Gender, Age, Marital Status, Dependents)
-- Financial details (Income, Loan Amount, Loan Term)
-- Credit History and Property Area
-- Target: Loan Status (Approved/Not Approved)
-
-For detailed analysis, refer to the notebooks in the `notebooks/` directory.
+Missing values (96 cells in total) are filled with the column mean for numeric fields and the mode
+for categorical fields.

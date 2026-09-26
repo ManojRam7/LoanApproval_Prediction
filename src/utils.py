@@ -39,10 +39,10 @@ def get_prediction_message(prediction: int, probability: float = None) -> dict:
         Dictionary with status, message, and confidence
     """
     if prediction == 1:
-        status = "✅ APPROVED"
+        status = "APPROVED"
         message = "Your loan application has been approved!"
     else:
-        status = "❌ NOT APPROVED"
+        status = "NOT APPROVED"
         message = "Unfortunately, your loan application was not approved."
 
     result = {"status": status, "message": message}
